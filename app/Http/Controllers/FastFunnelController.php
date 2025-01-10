@@ -33,7 +33,8 @@ class FastFunnelController extends Controller
 
     public function handleWebHook(Request $request){
         
-        $this->paystack->handleWebHook($request);
+        $response =  $this->paystack->handleWebhook($request);
+        return $response;
 
     }
 }
