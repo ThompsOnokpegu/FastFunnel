@@ -17,9 +17,9 @@ class FastFunnel extends Component
     #[Validate('required')]
     #[Validate('min:3')]
     public $billing_name;
-    public $naira = 13000;
-    public $dollar = 20;
-    #[Validate('required')]
+    //public $naira = 13000;
+    // public $dollar = 20;
+    // #[Validate('required')]
     public $amount = 13000;
 
     public function render()
@@ -33,10 +33,10 @@ class FastFunnel extends Component
         
         $amount = $this->amount;
         $reference = Str::uuid();//uuid4();
-        $callbackUrl = route('subscription.callback');
-        $currency = $this->amount==$this->naira ? "NGN" : "USD";
+        $callbackUrl = route('callback');
+        $currency = "NGN";
         $email = $this->billing_email;
-        // dd($reference->toString());
+        //dd($reference->toString());
         $response = $paystack->onetimePayment($email,$amount,$reference,$currency,$callbackUrl);
 
         if ($response['status']) {
@@ -45,6 +45,7 @@ class FastFunnel extends Component
             if(!$user){
                 User::create([
                     'email' => $this->billing_email,
+                    'amount' => $this->amount,
                     'name' => $this->billing_name,
                     'reference' => $reference,
                 ]);

@@ -21,7 +21,7 @@
         </div>
         <div class="mt-5 sm:mt-0 lg:col-span-5 border rounded-md border-gray-100 shadow-lg">
             
-            <form action="#" class="w-full bg-white p-4 sm:p-6 lg:max-w-xl lg:p-8"> 
+            <form wire:submit="payOnce" class="w-full bg-white p-4 sm:p-6 lg:max-w-xl lg:p-8"> 
                 <h2 class="text-3xl mb-5 font-semibold text-gray-900 dark:text-white sm:text-4xl">₦13000 NGN</h2>       
                 <section class="bg-white py-3 antialiased">
                     
@@ -32,12 +32,18 @@
                                 <div class="mb-6 grid grid-cols-2 gap-4">
                                     <div class="col-span-2">
                                         <label for="full_name" class="mb-2 block text-sm font-medium text-gray-900"> Full name* </label>
-                                        <input type="text" id="full_name" wire:model="billing_name" class="block w-full border rounded border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500" placeholder="AJ Thompson"/>
+                                        <input type="text" id="full_name" wire:model="billing_name" class="block w-full border rounded border-gray-300 bg-gray-50 py-4 px-5 text-sm text-gray-900 focus:border-green-500 focus:ring-green-500" placeholder="AJ Thompson"/>
+                                        <div>
+                                            @error('billing_name') <span class="error text-deepr_red-50">{{ $message }}</span> @enderror 
+                                        </div>
                                     </div>
                         
                                     <div class="col-span-2">
                                         <label for="email" class="mb-2 block text-sm font-medium text-gray-900"> Email address* </label>
-                                        <input type="email" id="email" wire:model="billing_email" class="block w-full border rounded border-gray-300 bg-gray-50 p-2.5 pe-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500" placeholder="Email Address"/>
+                                        <input type="email" id="email" wire:model="billing_email" class="block w-full border rounded border-gray-300 bg-gray-50 py-4 px-5 pe-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500" placeholder="Email Address"/>
+                                        <div>
+                                            @error('billing_email') <span class="error text-deepr_red-50">{{ $message }}</span> @enderror 
+                                        </div>
                                     </div> 
                                 </div>
                                 <div class="mt-6 grow sm:mt-8 lg:mt-8">
