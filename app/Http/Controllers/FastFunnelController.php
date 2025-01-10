@@ -7,11 +7,16 @@ use Illuminate\Http\Request;
 
 class FastFunnelController extends Controller
 {
-    //
+    protected $paystack;
+    
+    public function __construct(PaystackService $paystack)
+    {
+        $this->paystack = $paystack;
+    }
 
     public function handleCallBack(Request $request){
-        $paystack = new PaystackService;
-        $response = $paystack->handleCallback($request);
+        
+        $response = $this->paystack->handleCallback($request);
         return view('thank-you',compact('response'));
     }
 
@@ -24,5 +29,11 @@ class FastFunnelController extends Controller
          ];
 
         return response()->download($file, 'TheFastFunnel.pdf', $headers);
+    }
+
+    public function handleWebHook(Request $request){
+        
+        $this->paystack->handleWebHook($request);
+
     }
 }
