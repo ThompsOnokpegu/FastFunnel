@@ -53,7 +53,7 @@ class FastFunnel extends Component
                 $user->update([
                     'reference' => $reference,
                     'amount' => $this->amount,
-                    'name' => $this->name
+                    'name' => $this->billing_name
                 ]);
             }
             
