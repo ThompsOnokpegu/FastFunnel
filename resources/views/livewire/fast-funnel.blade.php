@@ -16,13 +16,17 @@
                     <li>
                         <span class="font-bold">Affordable</span> for small budgets.
                     </li>    
+                    <li>
+                        <span class="font-bold text-deepr_red-50">NOT suitable</span> for retail business.
+                    </li>    
                 </ul>  
             </div>      
         </div>
         <div class="mt-5 sm:mt-0 lg:col-span-5 border rounded-md border-gray-100 shadow-lg">
             
             <form wire:submit="payOnce" class="w-full bg-white p-4 sm:p-6 lg:max-w-xl lg:p-8"> 
-                <h2 class="text-3xl mb-5 font-semibold text-gray-900 dark:text-white sm:text-4xl">₦13000 NGN</h2>       
+                <h2 class="text-3xl font-semibold text-gray-900">₦13000 NGN</h2>
+                <span class="text-base p-1 font-semibold bg-black text-deepr_green-50">Today's Price</span>       
                 <section class="bg-white py-3 antialiased">
                     
                     <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
