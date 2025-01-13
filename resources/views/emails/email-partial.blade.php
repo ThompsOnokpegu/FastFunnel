@@ -22,7 +22,7 @@
         
             <footer class="mt-8">
                 <p class="text-gray-500">
-                    This email was sent to <a href="{{ $user->email }}" class="text-green-600 hover:underline" target="_blank"></a>. 
+                    This email was sent to <a href="#" class="text-green-600 hover:underline" target="_blank">{{ $user->email }}</a>. 
                     
                 </p>
         
