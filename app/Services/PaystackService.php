@@ -143,7 +143,7 @@ class PaystackService
     }
 
     private function handleOnetimePayment($payload){
-        $user = User::where('reference',$payload['data']['reference']);
+        $user = User::where('reference',$payload['data']['reference'])->first();
 
         if($user){
             $user->update([    
