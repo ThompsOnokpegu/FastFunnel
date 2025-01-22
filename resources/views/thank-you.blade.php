@@ -26,6 +26,7 @@
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1352309452423607');
+            fbq('track', 'PageView')
             fbq('track', 'Purchase', {
                 value: 13000.00,
                 currency: 'NGN'
