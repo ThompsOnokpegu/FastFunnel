@@ -8,7 +8,10 @@
             <div class="ml-10">
                 <ul class="max-w-xl mb-4 font-montserrat space-y-4 text-lg sm:text-2xl text-black list-disc list-outside">
                     <li>
-                        <span class="underline">Easy-to-follow</span> steps.
+                        <span class="underline">Easy-to-follow</span> steps - (in 10mins).
+                    </li>
+                    <li>
+                        <span class="underline">Implement within 24hrs.
                     </li>
                     <li>
                         Works for any <span class="font-bold">service-based business</span>.
