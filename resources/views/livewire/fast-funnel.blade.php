@@ -29,7 +29,7 @@
             <p class="mt-1.5"><span class="text-base p-2 rounded-b-xl font-semibold bg-deepr_red-50 text-white">Today's Price</span></p>
             <form wire:submit="payOnce" wire:loading.class="opacity-40" class="w-full bg-white p-4 sm:p-6 lg:max-w-xl lg:p-8">
                  
-                <h2 class="text-3xl font-anton font-light text-black">₦13000 NGN</h2>
+                <h2 class="text-3xl font-anton font-light text-black">₦7000 NGN</h2>
                        
                 <section class="bg-white py-3 antialiased">
                     
@@ -59,12 +59,12 @@
                                         <div class="space-y-2">
                                             <dl class="flex items-center justify-between gap-4">
                                             <dt class="text-base font-montserrat font-normal text-gray-500 ">Original price</dt>
-                                            <dd class="text-base line-through font-medium text-gray-900">₦32000</dd>
+                                            <dd class="text-base line-through font-medium text-gray-900">₦13000</dd>
                                             </dl>
                             
                                             <dl class="flex items-center justify-between gap-4">
                                             <dt class="text-base font-montserrat font-normal text-gray-500 ">Savings</dt>
-                                            <dd class="text-base font-medium text-green-500">-₦19000</dd>
+                                            <dd class="text-base font-medium text-green-500">-₦6000</dd>
                                             </dl>
                             
                                             <dl class="flex items-center justify-between gap-4">
@@ -75,10 +75,10 @@
                         
                                         <dl class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2">
                                             <dt class="text-base font-anton font-light text-gray-900">Total</dt>
-                                            <dd class="text-base font-bold text-gray-900">₦13000.00</dd>
+                                            <dd class="text-base font-bold text-gray-900">₦7000.00</dd>
                                         </dl>
                                     </div>
-                                    <button type="submit" class="flex w-full items-center rounded justify-center bg-black px-5 mt-5 py-4 text-sm font-montserrat font-medium text-deepr_green-50 hover:bg-gray-900 focus:outline-none focus:ring-4  focus:ring-primary-300">GET THE GUIDE FOR JUST ₦13000</button>
+                                    <button type="submit" class="flex w-full items-center rounded justify-center bg-black px-5 mt-5 py-4 text-sm font-montserrat font-medium text-deepr_green-50 hover:bg-gray-900 focus:outline-none focus:ring-4  focus:ring-primary-300">GET THE GUIDE FOR JUST ₦7000</button>
                                     <div class="mt-6 flex items-center justify-center gap-8">
                                         <img src="{{ asset('img/paystack-ii.webp') }}" alt="Paystack" />
                                     </div>

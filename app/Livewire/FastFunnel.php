@@ -20,7 +20,7 @@ class FastFunnel extends Component
     //public $naira = 13000;
     // public $dollar = 20;
     // #[Validate('required')]
-    public $amount = 13000;
+    public $amount = 7000;
 
     public function render()
     {
