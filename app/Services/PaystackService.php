@@ -68,7 +68,7 @@ class PaystackService
     }
 
     public function handleWebhook(Request $request){
-        Log::debug('Webhook fired');
+        //Log::debug('Webhook fired');
         // Check if it's a POST request with Paystack signature header
         if ((strtoupper($_SERVER['REQUEST_METHOD']) != 'POST' ) || !array_key_exists('HTTP_X_PAYSTACK_SIGNATURE', $_SERVER) ) {
             exit();
@@ -82,9 +82,10 @@ class PaystackService
 
         // Calculate your own HMAC signature
         $generatedSignature = hash_hmac('sha512', $payload, env('PAYSTACK_SECRET_KEY'));
-
+        
         // Verify if the Paystack signature matches the generated one
         if ($paystackSignature === $generatedSignature) {
+            Log::debug('Signature okay!');
             $payload = $request->all();//array
             $event = $payload['event'];
            
@@ -99,6 +100,7 @@ class PaystackService
                     $this->handleSubscriptionComplete($payload);
                     return response('Webhook Processed', 200);
                 case 'charge.success':
+                    Log::debug('success event fired');
                     $this->handleOnetimePayment($payload);
                     return response('Webhook Processed',200);
                 default:
@@ -144,7 +146,7 @@ class PaystackService
 
     private function handleOnetimePayment($payload){
         $user = User::where('reference',$payload['data']['reference'])->first();
-
+        Log::debug($user);
         if($user){
             $user->update([    
                 'payment_status' => 1,
