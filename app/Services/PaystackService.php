@@ -148,10 +148,8 @@ class PaystackService
         $user = User::where('reference',$payload['data']['reference'])->first();
         Log::debug($user);
         if($user){
-            $user->update([    
-                'payment_status' => 1,
-            ]);
-            
+            $user->payment_status = 1;
+            $user->save();    
             // Send confirmation email with download instructions
             Mail::to($user->email)->send(new DownloadInstructions($user));
         }
