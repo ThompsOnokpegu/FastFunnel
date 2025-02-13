@@ -85,7 +85,7 @@ class PaystackService
         
         // Verify if the Paystack signature matches the generated one
         if ($paystackSignature === $generatedSignature) {
-            Log::debug('Signature okay!');
+            //Log::debug('Signature okay!');
             $payload = $request->all();//array
             $event = $payload['event'];
            
@@ -100,7 +100,6 @@ class PaystackService
                     $this->handleSubscriptionComplete($payload);
                     return response('Webhook Processed', 200);
                 case 'charge.success':
-                    Log::debug('success event fired');
                     $this->handleOnetimePayment($payload);
                     return response('Webhook Processed',200);
                 default:
@@ -146,7 +145,6 @@ class PaystackService
 
     private function handleOnetimePayment($payload){
         $user = User::where('reference',$payload['data']['reference'])->first();
-        Log::debug($user);
         if($user){
             $user->payment_status = 1;
             $user->save();    

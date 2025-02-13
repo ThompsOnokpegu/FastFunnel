@@ -1,31 +1,70 @@
 <section class="bg-white">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-0 xl:gap-12 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto lg:col-span-6">
-            <img class=" rounded-xl" src="{{ asset('img/fastfunnel.png') }}" alt="Fast Funnel">
+            {{-- <img class=" rounded-xl" src="{{ asset('img/fastfunnel.png') }}" alt="Fast Funnel"> --}}
             {{-- <p class="mb-3 text-lg italic text-black lg:text-xl">Stop losing money on ads that don’t work?</p> --}}
-            <h1 class="max-w-2xl my-4 pl-2 font-anton text-5xl font-medium tracking-normal sm:leading-loose md:text-5xl xl:text-6xl">Get Paying Clients in Just 24 Hours with ₦8000 Ad</h1>
+            {{-- <h1 class="max-w-2xl my-4 pl-2 font-anton text-5xl font-medium tracking-normal sm:leading-loose md:text-5xl xl:text-6xl">Get Paying Clients in Just 24 Hours with ₦8000 Ad</h1> --}}
             {{-- <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl">Follow my proven 3-step system to attract leads and close sales.</p> --}}
+            
+            <div class="py-4 text-center lg:py-5">
+                <p class="mb-8 text-lg italic text-black lg:text-xl sm:px-8 xl:px-20">Ads Too Expensive Or Not Profitable?</p>
+                <h1 class="mb-4 -mt-3 font-anton text-3xl leading-8 tracking-wide sm:leading-normal text-black md:text-3xl lg:text-5xl">Turn Strangers into
+                <span class="bg-deepr_green-50 leading-tight">PAYING CLIENTS</span> in 48 Hours with a Simple <span class="bg-deepr_green-50 sm:leading-normal">₦8000 Ad</span></h1>
+                <p class="text-md font-montserrat mb-4 leading-6 font-semibold text-black italic">If you’re a coach, consultant, agency owner, or service provider who books calls to close clients—this is for you. <span class="text-deepr_red-50">(This is NOT for e-commerce or product-based businesses.)</span></p>
+            </div>
+            <img class=" rounded-xl" src="{{ asset('img/fastfunnel.png') }}" alt="Fast Funnel">
+            <h1 class="mb-4 mt-6 font-montserrat font-semibold text-xl leading-8 tracking-wide sm:leading-normal text-black md:text-xl lg:text-3xl">Tired of Wasting Ad Budgets on Funnels That Just Don’t Convert?</h1>
             <div class="ml-10">
-                <ul class="max-w-xl mb-4 font-montserrat space-y-4 text-lg sm:text-2xl text-black list-disc list-outside">
+                
+                <ul class="max-w-xl mb-4 font-montserrat space-y-4 text-md sm:text-lg text-black list-disc list-outside">
                     <li>
-                        <span class="underline">Easy-to-follow</span> steps - (in 10mins).
+                        <span>High-cost VSL and Webinar Funnels that <span class="underline">drain your budget.</span></span>
                     </li>
                     <li>
-                        <span class="underline">Implement within 24hrs.
+                        Slow sales cycles with low conversion rates.
                     </li>
                     <li>
-                        Works for any <span class="font-bold">service-based business</span>.
-                    </li>
-                    <li>
-                        <span class="font-bold">Affordable</span> for small budgets.
-                    </li>    
-                    <li>
-                        <span class="font-bold text-deepr_red-50">NOT suitable</span> for retail business.
-                    </li>    
+                        A complicated process that leaves you <span class="font-bold">wondering if your offer is even viable.</span>.
+                    </li>   
                 </ul>  
-            </div>      
+            </div> 
+            <h1 class="mb-4 mt-6 font-montserrat font-semibold text-xl leading-8 tracking-wide sm:leading-normal text-black md:text-xl lg:text-3xl">The Fast Funnel Playbook</h1>
+            <p class="font-montserrat space-y-4 text-md sm:text-lg text-black">Inside this step-by-step guide, you’ll discover a streamlined, three-pillar strategy built around:</p>
+            <div class="ml-10">
+                
+                <ul class="max-w-xl mb-4 font-montserrat space-y-4 text-md sm:text-lg text-black list-disc list-outside">
+                    <li>
+                        <span class="font-bold">Clarity:</span> Grab attention with a value bomb that <span class="underline">addresses one immediate problem.
+                    </li>   
+                    <li>
+                        <span class="font-bold">Certainty:</span> Build confidence with a simple ₦8000 ad campaign that shows you exactly <span class="underline">how to drive qualified leads.
+                    </li>   
+                    <li>
+                        <span class="font-bold">Trust:</span>  <span class="underline">Convert engagement into sales</span> through personalized follow-up conversations.
+                    </li>   
+                </ul> 
+                <p class="font-montserrat space-y-4 font-semibold text-2xl italic text-black">This is your shortcut to validating your offer before investing thousands in expensive funnels.</p> 
+            </div>    
+            <h1 class="my-5 font-anton text-3xl leading-8 tracking-wide sm:leading-normal text-black md:text-3xl lg:text-5xl">What You Get Inside the Playbook</h1>
+            <div class="ml-10">
+                
+                <ul class="max-w-xl mb-4 font-montserrat space-y-4 text-md sm:text-lg text-black list-disc list-outside">
+                    <li>
+                        <span class="font-bold">A Complete 3-Step System</span> - how to create a “value bomb” that <span class="bg-deepr_green-50 italic text-lg leading-tight">instantly attracts prospects</span> and sets your funnel in motion.
+                    </li>   
+                    <li>
+                        <span class="font-bold">Why Traditional VSL Funnels Are Costly</span> - and how you can avoid that trap with <span class="bg-deepr_green-50 italic text-lg leading-tight">a faster, more profitable approach.</span>
+                    </li>   
+                    <li>
+                        <span class="font-bold">Instant Offer Validation</span> - test your messaging and offer with a simple ₦8000 ad—get <span class="bg-deepr_green-50 italic text-lg leading-tight">immediate feedback</span> whether people are ready to book calls.
+                    </li>   
+                    <li>
+                        <span class="font-bold">Optimization & Scaling Tips</span> - Learn how to refine your campaigns and scale your ad spend efficiently to boost profitability.
+                    </li>   
+                </ul>  
+            </div>       
         </div>
-        <div class="mt-5 sm:mt-0 lg:col-span-5 border rounded-md border-gray-100 shadow-lg">
+        <div class="mt-5 sm:mt-0 lg:col-span-5 border rounded-lg border-gray-300 shadow-md shadow-gray-400 sm:border-none sm:shadow-none">
             <p class="mt-1.5"><span class="text-base p-2 rounded-b-xl font-semibold bg-deepr_red-50 text-white">Today's Price</span></p>
             <form wire:submit="payOnce" wire:loading.class="opacity-40" class="w-full bg-white p-4 sm:p-6 lg:max-w-xl lg:p-8">
                  
