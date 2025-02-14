@@ -1,7 +1,7 @@
 <section class="bg-white">
     <div class="pt-5 pb-3 lg:pb-5 px-4 mx-auto max-w-screen-xl text-center lg:px-12">
         <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200" role="alert">
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
               </svg>
               
@@ -25,7 +25,7 @@
             </div>
             <img class=" rounded-xl" src="{{ asset('img/fastfunnel.png') }}" alt="Fast Funnel">
             <div class="justify-items-center max-w-full">
-                <a href="#checkout-form" class="sm:hidden flex w-11/12 text-center justify-center rounded-3xl bg-black px-1 shadow-md shadow-deepr_green-50 mt-5 py-7 text-sm font-anton tracking-wider font-medium text-deepr_green-50 hover:bg-black focus:outline-none focus:ring-4  focus:ring-deepr_green-50">
+                <a href="#checkout-form" class="sm:hidden flex w-11/12 text-center justify-center rounded-3xl bg-black px-1 shadow-md shadow-deepr_green-50 mt-5 py-7 text-lg font-anton leading-tight tracking-wider font-medium text-deepr_green-50 hover:bg-black focus:outline-none focus:ring-4  focus:ring-deepr_green-50">
                     <span>GET INSTANT ACCESS FOR ONLY ₦16,000<br><em class=" text-xs font-montserrat">CLICK HERE TO GET INSTANT ACCESS</em> </span>  
                 </a>
 
@@ -70,7 +70,7 @@
                         <span class="font-bold">Trust:</span>  <span class="underline">Convert engagement into sales</span> through personalized follow-up conversations.
                     </li>   
                 </ul> 
-                <p class="font-montserrat space-y-4 font-semibold text-2xl italic text-black">This is your shortcut to validating your offer before investing thousands in expensive funnels.</p> 
+                <p class="font-montserrat space-y-4 font-semibold text-2xl italic text-black">This is your <span class="bg-deepr_green-50">shortcut to validating your offer</span> before investing thousands in expensive funnels.</p> 
             </div>    
             <h1 class="my-5 font-anton text-3xl leading-8 tracking-wide sm:leading-normal text-black md:text-3xl lg:text-5xl">What You Get Inside the Playbook</h1>
             <div class="ml-5">
@@ -118,7 +118,7 @@
                 </ul>  
             </div>       
         </div>
-        <div id="checkout-form" class="mt-5 sm:mt-0 lg:col-span-5 border rounded-xl border-gray-300 shadow-md shadow-gray-400 sm:border-none sm:shadow-none">
+        <div id="checkout-form" class="mt-5 sm:mt-0 lg:col-span-5 border py-8 rounded-xl border-gray-300 shadow-md shadow-gray-400 sm:border-none sm:shadow-none">
             {{-- <p class="mt-1.5"><span class="text-base p-2 rounded-b-xl font-semibold bg-deepr_red-50 text-white">Today's Price</span></p> --}}
             <div class="px-5 text-center">
                 <h1 class="text-2xl pt-5 font-bold">GET INSTANT ACCESS TODAY</h1>
@@ -168,4 +168,33 @@
             </form>
         </div>                
     </div>
+    <section class="bg-white">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg">
+                <h2 class="mb-4 text-4xl text-center tracking-wide underline font-anton text-black">SOME CLIENT RESULTS</h2>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="text-center">
+                        <p>₦1.2M from 12 deals</p>
+                        <img class="w-full rounded-lg" src="{{ asset('img/fast1.png') }}" alt="client result 1">
+                    </div>
+                    <div class="text-center">
+                        <p class="mt-4 w-full lg:mt-10">3 x ₦200K/month subscription</p>
+                        <img class="rounded-lg" src="{{ asset('img/fast2.png') }}" alt="client result 2">
+                    </div>
+                </div>
+            </div>
+            <div class="font-light text-gray-500 sm:text-lg">
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="text-center">
+                        <p>₦42M project from 1 Deal</p>
+                        <img class="w-full rounded-lg" src="{{ asset('img/fast3.png') }}" alt="client result 3">
+                    </div>
+                    <div class="text-center">
+                        <p class="mt-4 w-full lg:mt-10">₦17.6M from 22 deals</p>
+                        <img class="rounded-lg" src="{{ asset('img/fast4.png') }}" alt="client result 4">
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
 </section>
