@@ -30,11 +30,11 @@
                        
                         <img class=" rounded-xl" src="{{ asset('img/fastfunnel.png') }}" alt="Fast Funnel">
                         <h2 class="mb-2 text-3xl font-anton font-medium tracking-normal text-black"><a href="{{ route('fast-funnel') }}">The FAST Funnel <br>Playbook</a></h2>
-                        <p class="mb-5 font-montserrat font-light text-gray-700">This step-by-step guide will teach you how to turn complete strangers into paying clients in just 24 hours using a simple ₦8000 ad.</p>
+                        <p class="mb-5 font-montserrat font-light text-gray-700">This step-by-step guide will teach you how to Get 2-4 New Clients In The Next 7 Days Using The FAST Funnel Playbook</p>
                         <div class="flex justify-between items-center">
                             <div class="flex items-center space-x-4">
                                 <span class="font-anton tracking-wider text-black font-medium text-2xl">
-                                    ₦13,000 <span class="text-sm text-gray-700" >NGN</span>
+                                    ₦32,000 <span class="text-sm text-gray-700" >NGN</span>
                                 </span>
                             </div>
                             <a href="{{ route('fast-funnel') }}" wire:navigate.hover class="inline-flex items-center font-anton font-medium text-deepr_red-50 hover:underline">
