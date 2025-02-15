@@ -174,11 +174,11 @@
                 <h2 class="mb-4 text-4xl text-center tracking-wide underline font-anton text-black">SOME CLIENT RESULTS</h2>
                 <div class="grid grid-cols-2 gap-4 mt-8">
                     <div class="text-center">
-                        <p>₦1.2M from 12 deals</p>
+                        <p class="font-montserrat font-medium">₦1.2M from 12 Deals</p>
                         <img class="w-full rounded-lg" src="{{ asset('img/fast1.png') }}" alt="client result 1">
                     </div>
                     <div class="text-center">
-                        <p class="mt-4 w-full lg:mt-10">3 x ₦200K/month subscription</p>
+                        <p class="mt-4 w-full lg:mt-10 font-montserrat font-medium">3 x ₦200K/month Subscription</p>
                         <img class="rounded-lg" src="{{ asset('img/fast2.png') }}" alt="client result 2">
                     </div>
                 </div>
@@ -186,15 +186,26 @@
             <div class="font-light text-gray-500 sm:text-lg">
                 <div class="grid grid-cols-2 gap-4 mt-8">
                     <div class="text-center">
-                        <p>₦42M project from 1 Deal</p>
+                        <p class="font-montserrat font-medium">₦42M Project from 1 Deal</p>
                         <img class="w-full rounded-lg" src="{{ asset('img/fast3.png') }}" alt="client result 3">
                     </div>
                     <div class="text-center">
-                        <p class="mt-4 w-full lg:mt-10">₦17.6M from 22 deals</p>
+                        <p class="mt-4 w-full lg:mt-10 font-montserrat font-medium">₦17.6M from 22 Deals</p>
                         <img class="rounded-lg" src="{{ asset('img/fast4.png') }}" alt="client result 4">
                     </div>
                 </div>
             </div>   
+        </div>
+    </section>
+    <section class="bg-black justify-items-center py-10">
+        <img class="h-10" src="{{ asset('img/logo.png') }}" alt="logo">
+        
+        <div class="gap-16 items-center text-center text-xs text-gray-700 py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <p>NOT FACEBOOK™: This site is not a part of the Facebook™ website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.</p>
+            <p>We use cookies, including third-party cookies, on this website to help operate our site and for analytics and advertising purposes. For more on how we use cookies and your cookie choices, go here for our cookie policy! </p>
+        </div>
+        <div>
+            <p class="text-gray-700">&copy; 2022-<?php echo date("Y"); ?> Deepr Marketing</p>
         </div>
     </section>
 </section>
