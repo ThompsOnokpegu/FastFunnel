@@ -17,9 +17,9 @@ class FastFunnel extends Component
     #[Validate('required')]
     #[Validate('min:3')]
     public $billing_name;
-    //public $naira = 13000;
-    // public $dollar = 20;
-    // #[Validate('required')]
+    public $coupon_code;
+    public $code = 'FAST10';
+    public $coupon_value = 6000;
     public $amount = 16000;
 
     public function render()
@@ -30,8 +30,12 @@ class FastFunnel extends Component
     public function payOnce(){
         $paystack = new PaystackService;
         $this->validate();
-        
         $amount = $this->amount;
+
+        if($this->code == $this->coupon_code){
+            $amount = $amount - $this->coupon_value;//
+        }
+        
         $reference = Str::uuid();//uuid4();
         $callbackUrl = route('callback');
         $currency = "NGN";

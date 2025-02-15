@@ -139,7 +139,7 @@
                             <div class="lg:items-start lg:gap-12">
                                 <div class="mb-6 grid grid-cols-2 gap-4">
                                     <div class="col-span-2">
-                                        <label for="full_name" class="mb-2 block text-md font-montserrat font-medium text-gray-900"> Full name* </label>
+                                        <label for="full_name" class="mb-2 block text-md font-montserrat font-medium text-gray-900"> Full name<span class="text-deepr_red-50">*</span> </label>
                                         <input type="text" id="full_name" wire:model="billing_name" class="block w-full border rounded border-gray-300 bg-white py-4 px-5 text-md text-gray-900 focus:border-green-500 focus:ring-green-500" placeholder="AJ Thompson"/>
                                         <div>
                                             @error('billing_name') <span class="error text-deepr_red-50">{{ $message }}</span> @enderror 
@@ -147,10 +147,18 @@
                                     </div>
                         
                                     <div class="col-span-2">
-                                        <label for="email" class="mb-2 block text-md font-montserrat font-medium text-gray-900"> Email address* </label>
+                                        <label for="email" class="mb-2 block text-md font-montserrat font-medium text-gray-900"> Email address<span class="text-deepr_red-50">*</span> </label>
                                         <input type="email" id="email" wire:model="billing_email" class="block w-full border rounded border-gray-300 bg-white py-4 px-5 pe-10 text-md text-gray-900 focus:border-green-500 focus:ring-green-500" placeholder="jane@example.com"/>
                                         <div>
                                             @error('billing_email') <span class="error text-deepr_red-50">{{ $message }}</span> @enderror 
+                                        </div>
+                                    </div> 
+                                    <div class="col-span-2 border-t-2 bg-gray-200 border-gray-300 mt-5 p-3 rounded-md">
+                                        
+                                        <label for="coupon" class="mb-2 block text-md font-montserrat font-medium text-gray-900"> Coupon Code </label>
+                                        <input type="text" id="coupon" wire:model="coupon_code" class="block w-full border rounded border-gray-300 bg-white py-3 px-5 pe-10 text-md text-gray-900 focus:border-green-500 focus:ring-green-500" placeholder="DEEPR1"/>
+                                        <div>
+                                            @error('coupon_code') <span class="error text-deepr_red-50">{{ $message }}</span> @enderror 
                                         </div>
                                     </div> 
                                 </div>
@@ -198,7 +206,8 @@
         </div>
     </section>
     <section class="bg-black justify-items-center py-10">
-        <img class="h-10" src="{{ asset('img/logo.png') }}" alt="logo">
+        {{-- <img class="h-10" src="{{ asset('img/logo.png') }}" alt="logo"> --}}
+        <h1 class="font-anton text-lg text-gray-300 tracking-wide">Deepr Marketing</h1>
         
         <div class="gap-16 items-center text-center text-xs text-gray-700 py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <p>NOT FACEBOOK™: This site is not a part of the Facebook™ website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.</p>

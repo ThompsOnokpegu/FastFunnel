@@ -28,7 +28,7 @@
             fbq('init', '1352309452423607');
             fbq('track', 'PageView')
             fbq('track', 'Purchase', {
-                value: 7000.00,
+                value: 16000.00,
                 currency: 'NGN'
             });
         </script>
